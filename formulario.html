@@ -6,50 +6,51 @@
         <title>Formulários</title>
     </head> 
     <body>  
-        <div>
-            <h2>Formulário</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
+        <h2>Formulário</h2>
+    <div style="border: 1px solid black; padding: 10px; width: fit-content;">
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
 
-                <label for="data-nascimento">Data de Nascimento:</label>
-                <input type="date" id="data-nascimento" name="data-nascimento" required>
+            <label for="data-nascimento">Data de Nascimento:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required><br>
 
-                <label>Sexo:</label>
-                <select id="sexo" name="sexo">
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="prefiro-nao-informar">Prefiro não informar</option>
-                </select>
+            <label>Sexo:</label>
+                <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="feminino" name="sexo" value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <input type="radio" id="prefiro-nao-informar" name="sexo" value="prefiro-nao-informar" required>
+                <label for="prefiro-nao-informar">Prefiro não informar</label><br>
 
-                <label for="endereco">Endereço:</label>
-                <input type="text" id="endereco" name="endereco" required>
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco" required><br>
 
-                <label for="logradouro">Logradouro:</label>
-                <input type="text" id="logradouro" name="logradouro" required>
+            <label for="logradouro">Logradouro:</label>
+            <input type="text" id="logradouro" name="logradouro" required><br>
 
-                <label for="bairro">Bairro:</label>
-                <input type="text" id="bairro" name="bairro" required>
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required><br>
 
-                <label for="cidade">Cidade:</label>
-                <input type="text" id="cidade" name="cidade" required>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required><br>
 
-                <label for="uf">UF:</label>
-                <select id="uf" name="uf" required>
-                    <option value="">Selecione</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="GO">Goiás</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                </select>
+            <label for="uf">UF:</label>
+            <select id="uf" name="uf" required>
+                <option value="">Selecione</option>
+                <option value="DF">BA</option>
+                <option value="GO">DF</option>
+                <option value="RJ">RJ</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+            </select><br>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
 
-                <button type="reset">Limpar</button>
-                <button type="submit">Enviar</button>
-            </form>
-        </div>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
     </body> 
 </html> 
