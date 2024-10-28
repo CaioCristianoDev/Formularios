@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
 }
 
 h3, li, h1, h2 {
@@ -10,4 +10,9 @@ h3, li, h1, h2 {
 ol > li::marker {
     font-weight: bold;
     color: white;
+}
+
+textarea {
+    width: 500px;
+    height: 70px;
 }
