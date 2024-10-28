@@ -3,6 +3,19 @@ body{
     background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
 }
 
+h3, li, h1, h2 {
+    color: white;
+}
+
+ol > li::marker {
+    font-weight: bold;
+    color: white;
+}
+textarea {
+    width: 500px;
+    height: 70px;
+}
+
 .box{
     color: white;
     position: absolute;
