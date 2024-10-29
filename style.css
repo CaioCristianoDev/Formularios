@@ -16,3 +16,19 @@ ol > li::marker {
     text-align: justify;
     padding: 20px;
 }
+
+.botao-azul {
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.botao-azul:hover {
+    background-color: #0056b3;
+}
