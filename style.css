@@ -11,8 +11,3 @@ ol > li::marker {
     font-weight: bold;
     color: white;
 }
-
-textarea {
-    width: auto;
-    height: auto;
-}
