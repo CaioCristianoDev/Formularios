@@ -35,16 +35,11 @@
                 <label for="feminino">Feminino</label>
                 <br>
                 <input type="radio" id="outro" name="genero" value="outro" required>
-                <label for="outro">Outro</label>
+                <label for="outro">Prefiro não informar</label>
                 <br><br>
                 <label for="data_nascimento"><b>Data de Nascimento:</b></label>
                 <input type="date" name="data_nascimento" id="data_nascimento" required>
                 <br><br>
-                <div class="inputBox">
-                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
-                    <label for="cidade" class="labelInput">Cidade</label>
-                </div>
-                <br>
                 <div class="inputBox">
                     <label for="unidade_da_federacao" class="inputUser">UF:</label>
                         <select id="unidade_da_federacao" name="unidade_da_federacao">
@@ -57,18 +52,23 @@
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="estado" id="estado" class="inputUser" required>
-                    <label for="estado" class="labelInput">Estado</label>
+                    <input type="text" name="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
                 </div>
                 <br>
                 <div class="inputBox">
-                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
-                    <label for="endereco" class="labelInput">Endereço</label>
+                    <input type="text" name="bairro" id="bairro" class="inputUser" required>
+                    <label for="bairro" class="labelInput">Bairro</label>
                 </div>
                 <br>
-                <input type="submit" name="submit" id="submit">
+                <div class="inputBox">
+                    <input type="text" name="logradouro" id="logradouro" class="inputUser" required>
+                    <label for="logradouro" class="labelInput">Logradouro</label>
+                </div>
+                <br>
+                <input type="submit" name="submit" id="submit" value="Enviar">
                 <br><br>
-                <input type="reset" name="reset" id="reset">
+                <input type="reset" name="reset" id="reset" value="Limpar">
             </fieldset>
         </form>
     </div>

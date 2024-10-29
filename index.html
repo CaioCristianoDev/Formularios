@@ -22,55 +22,114 @@
         <ol style="list-style-type: lower-alpha;">
             <li>
                 <h3>Na tag input com atributo type="text", para que serve o atributo "placeholder"?</h3>
-                Serve para criar uma caixa de espaço aberto para que uma resposta seja inserida na pergunta da caixa. Ex: qual seu nome? eu colocaria Luiz dentro do espaço
+                Serve para adicionar uma dica do tipo de texto que é para adicionar no input de texto.<br><br>
+                
+                Neste exemplo, o texto "Escreva seu nome." é o placeholder:
+                
+                <br>
+                
+                <input type="text" placeholder="Escreva seu nome.">
             </li>
             <li>
                 <h3>Na tag input com atributo type="radio" ou type="checkbox", para que serve o atributo "checked"?</h3>
-                Especifica que um campo de entrada deve ser pré-selecionado quando a página for carregada (para type="checkbox" ou type="radio")
+                Especifica que um botão será automaticamente selecionado quando a página for carregada <br><br>
+
+                Repare que nestes exemplo, tanto o input do tipo "checkbox" quanto do tipo "radio" já aparecem pre-selecionados. 
+                <br>
+                radio:<br>
+                <input type="radio" name="exemplo_radio" checked><label>opção 1(com o atributo checked)</label><br>
+                <input type="radio" name="exemplo_radio"><label>opção 2</label>
+
+                <br><br>
+                checkbox:<br>
+                <input type="checkbox" checked><label>opção 1(com o atributo checked)</label><br>
+                <input type="checkbox"><label>opção 2(sem o atributo checked)</label>
+
             </li>
-            <li>
+            <li id="resposta_c">
                 <h3>Na tag input  para que serve o atributo "value"?</h3>
-                serve para definir o valor que será enviado por um item em HTML ou para definir um valor inicial para um input do tipo text em um formulário
+                Serve para definir o valor que será enviado por um input ou para definir um valor inicial para um input do tipo text em um formulário.
+                <br><br>
+                Neste exemplo, o nome "joão" já aparece na caixa de texto automaticamente. Repare que ao apertar "enviar", aparecerá "nome=joão" na url da pagina.:
+                <br>
+                <form>
+                    <input type="text" name="nome" value="joão">
+                    <input type="submit" value="Enviar">
+                </form>
             </li>
             <li>
                 <h3>Que atributo deve ser utilizado para agrupar vários botões de rádio em um formulário de modo que apenas um deles fique marcado de cada vez?</h3>
-                usamos o atributo "name"
+                Colocamos em todos os botões o mesmo atributo "name"
             </li>
             <li>
                 <h3>Para que serve a tag "label"? Para que serve o atributo "for" nessa tag? </h3>
-                "label" define um rótulo para vários elementos de formulário, é útil para usuários de leitores de tela, porque o leitor de tela lerá o rótulo em voz alta quando o usuário focar no elemento de entrada - o "for" é um atributo da label.
+                "label" define um rótulo para vários elementos de formulário, é útil para usuários de leitores de tela, porque o leitor de tela lerá o rótulo em voz alta quando o usuário focar no elemento de entrada. Também é util para pessoas com dificuldade em clicar em botões pequenos, pois ao clicar na label, os inputs do tipo "checkbox" ou "radio" são selecionados.<br>
+                O "for" é um atributo da label que recebe o id do input na qual o label é associado.
+                <br><br>
+                Neste exemplo, o texto ao lado do input de checkbox é uma label. Note que você consegue selecionar o checkbox clicando na label.
+                <br>
+                <input type="checkbox" id="exemplo_label"><label for="exemplo_label">(Isso é uma label)</label>
             </li>
             <li>
                 <h3>Na tag option para que serve o atributo "selected"?</h3>
-                Para definir uma opção pré-selecionada
+                Para definir que essa opção será a pre-selecionada.<br><br>
+
+                Neste exemplo, note que, por ter o atributo selected, o valor 2 aparece pre-selecionado ao inves do valor 1, que aparece primeiro na lista:
+                <br>
+                <select>
+                    <option>valor1</option>
+                    <option selected>valor2</option>
+                </select>
             </li>
             <li>
                 <h3>Nas tags de formulário para que serve o atributo "required"?</h3>
-                Especifica que um campo de entrada é obrigatório (deve ser preenchido)
+                Especifica que um campo de entrada é obrigatório (deve ser preenchido)<br><br>
+
+                Neste exemplo, note que se você apertar o botão "enviar" sem ter preenchido o input, o navegador vai te avisar que o atributo é obrigatorio.<br>
+                <form>
+                    <input type="text" required>
+                    <input type="submit" value="Enviar">
+                </form>
             </li>
             <li>
                 <h3>Pra que serve a tag textarea ?</h3>
-                define um campo de entrada multilinha (uma área de texto)
+                Define um campo de entrada multilinha (uma área de texto)<br><br>
+
+                Exemplo:<br>
+                <textarea>Isso é um textarea</textarea>
             </li>
             <li>
                 <h3>Na tag form para que serve o atributo "action"?</h3>
-                define a ação a ser executada quando o formulário é enviado. atributo for omitido, a ação será definida para a página atual.
+                Define a ação a ser executada quando o formulário é enviado. atributo for omitido, a ação será definida para a página atual.<br><br>
+                Na <a href="#resposta_c">resposta  da c</a> há um exemplo disso.
             </li>
             <li>
                 <h3>Na tag form para que serve o atributo "method"?</h3>
-                especifica o método HTTP a ser usado ao enviar os dados do formulário, Os dados do formulário podem ser enviados como variáveis de URL (com method="get") ou como transação HTTP post (com method="post").
+                Especifica o método HTTP a ser usado ao enviar os dados do formulário, Os dados do formulário podem ser enviados como variáveis de URL (com method="get") ou como transação HTTP post (com method="post").<br><br>
+                No <a href="#resposta_c">exemplo da resposta da c</a>, é utilizado o metodo "get".
             </li>
             <li>
                 <h3>Para que o valor digitado de uma senha não apareça na barra de endereços do navegador, qual deve ser o valor do atributo "method" na tag form?</h3>
-                usamos o "post" para que seja oculto os dados inseridos
+                Usamos o "post" para que seja oculto os dados inseridos.
             </li>
             <li>
                 <h3>Qual valor deve ser informado no atributo "method" na tag form em um formulário que será usado para fazer upload de arquivos?</h3>
-                Especifica como os dados do formulário devem ser codificados ao enviá-los ao servidor (somente para o método="post")
+                Para o upload de arquivos, o ideal é utilizar o metodo "post", pois não há limite da quantidade de dados que dá para enviar, diferente do "get".
             </li>
             <li>
                 <h3>O que as tags fieldset e legend produzem?</h3>
-                a tag "fieldset" é usado para agrupar dados relacionados em um formulário. E a tag "legend" elemento define uma legenda para o "fieldset"
+                A tag "fieldset" é usado para agrupar dados relacionados em um formulário. E a tag "legend" elemento define uma legenda para o "fieldset".<br><br>
+                Exemplo:<br>
+                <form>
+                    <fieldset>
+                        <legend>Categoria 1(Isso é a legenda do fieldset)</legend>
+                        <input type="text">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Categoria 2(Isso é a legenda do fieldset)</legend>
+                        <input type="text">
+                    </fieldset>
+                </form>
             </li>
         </ol>
         </div>
