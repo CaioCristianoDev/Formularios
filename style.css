@@ -1,5 +1,6 @@
 body{
     text-align: justify;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
 }
@@ -14,8 +15,8 @@ ol > li::marker {
 }
 
 .area_perguntas {
-    text-align: center;
     padding: 20px;
+    margin: 20px;
 }
 
 .botao {
