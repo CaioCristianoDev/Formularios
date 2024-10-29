@@ -1,6 +1,4 @@
 body{
-    text-align: justify;
-    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
 }
@@ -9,18 +7,19 @@ h3, li, h1, h2 {
     color: white;
 }
 
+
 ol > li::marker {
     font-weight: bold;
     color: white;
 }
 
-.area_perguntas {
-    padding: 20px;
-    margin: 20px;
+.perguntas {
+    text-align: justify;
+    padding: 10px;
+    margin: 15px;
 }
 
 .botao {
-    text-align: center;
     background-color: #007bff;
     color: #fff;
     padding: 10px 20px;
@@ -29,6 +28,10 @@ ol > li::marker {
     font-size: 16px;
     display: inline-block;
     transition: background-color 0.3s;
+}
+
+.posicao_botao {
+    text-align: center;
 }
 
 .botao:hover {
